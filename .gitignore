@@ -1,0 +1,149 @@
+# ==========================================================================
+# GITIGNORE
+# Autor: Pedro Sanchez Ramirez (mrchunckuee_electronics)
+# ==========================================================================
+
+
+# ==========================================================================
+# .gitignore para MPLABX - XC8 & MPLAB-VSCODE
+# ==========================================================================
+**.err
+
+**/debug/
+
+# Control de nbproject: Ignora todo pero permite conservar los archivos XML esenciales
+**/nbproject/*
+!**/nbproject/*.xml
+**/nbproject/private/
+
+# Ignora las carpetas dist, build y out pero permite rastrear los archivos .hex dentro de ellas
+**/dist/**
+**/build/**
+**/out/**
+!**/dist/**/
+!**/build/**/
+!**/out/**/
+!**/*.hex
+
+# Archivos objeto, ensamblaje y dependencias de compilación
+**/*.o
+**/*.d
+**/*.su
+**/*.elf
+# **/*.hex #Ya se atiende antes
+**/*.cof
+**/*.map
+**/*.hxl
+**/*.sym
+**/*.p1
+**/*.pre
+
+# Directorios de compilación modernos y cachés de herramientas
+**/_build/
+**/.generated_files/
+
+
+# ==========================================================================
+# .gitignore para KiCad
+# ==========================================================================
+# Archivos temporales y respaldos
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups/
+*-cache*
+*_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+
+# Preferencias locales del usuario
+# Guarda ajustes específicos de tu pantalla o sesión
+*.kicad_prl
+
+# Archivos de Automatización y Netlists
+*.net
+*.dsn
+*.ses
+*.cmp
+
+# Reportes y Archivos de Fabricación
+# Descomentar lo que no se desea guardar en el control de versiones.
+# *.gbr
+# *.drl
+# *.rpt
+# *.xml
+# *.csv
+# *.tsv
+# fp-info-cache
+
+
+# ==========================================================================
+# .gitignore files for Proteus
+# ==========================================================================
+**.workspace
+**.pdsbak
+**.pdsprj
+
+
+# ==========================================================================
+# .gitignore files for Eagle, a PCB layout tool
+# ==========================================================================
+# Backup files.
+**.s#?
+**.b#?
+**.l#?
+**.b$?
+**.s$?
+**.l$?
+
+# Eagle project file.
+# It contains a serial number and references to the file structure on your computer.
+# comment the following line if you want to have your project file included.
+#eagle.epf
+
+# Autorouter files
+#*.pro
+#*.job
+
+# CAM files
+#*.$$$
+#*.cmp
+#*.ly2
+#*.l15
+#*.sol
+#*.plc
+#*.stc
+#*.sts
+#*.crc
+#*.crs
+
+#*.dri
+#*.drl
+#*.gpi
+#*.pls
+#*.ger
+#*.xln
+
+#*.drd
+#*.drd.*
+
+#*.s#*
+#*.b#*
+
+#*.info
+
+#*.eps
+
+# file locks introduced since 7.x
+#*.lck
+
+
+# ==========================================================================
+# .gitignore files from OS
+# ==========================================================================
+*desktop.ini
+.DS_Store
+Thumbs.db
